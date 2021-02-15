@@ -1,67 +1,67 @@
-# Awesome Sysadmin
-A curated list of amazingly awesome open source sysadmin resources.
+# Дивовижне системне адміністрування
+Список дивовижних відкритих (open source) ресурсів для системного адміністрування.
 
-## Contributing
-Please read [CONTRIBUTING](./CONTRIBUTING.md) if you wish to add software.
+## Співпраця
+Перш ніж додавати ПЗ прочитайте [CONTRIBUTING](./CONTRIBUTING.md).
 
-## Table of Contents
-* [Awesome Sysadmin](#awesome-sysadmin)
-  * [Backups](#backups)
-  * [Build Automation](#build-automation)
+## Зміст
+* [Дивовижне системне адміністрування](#дивовижне-системне-адміністрування)
+  * [Резервне копіювання](#резервне-копіювання)
+  * [Автоматизація збірки](#автоматизація-збірки)
   * [ChatOps](#chatops)
-  * [Cloning](#cloning)
+  * [Клонування](#клонування)
   * [Cloud Computing](#cloud-computing)
-  * [Cloud Storage](#cloud-storage)
+  * [Хмарні сховища](#хмарні-сховища)
   * [Code Review](#code-review)
-  * [Collaborative Software](#collaborative-software)
+  * [Кооперативне ПЗ](#кооперативне-пз)
   * [Configuration Management Database](#configuration-management-database)
   * [Configuration Management](#configuration-management)
   * [Continuous Integration & Continuous Deployment](#continuous-integration--continuous-deployment)
-  * [Control Panels](#control-panels)
+  * [Панелі керування](#панелі-керування)
   * [Deployment Automation](#deployment-automation)
   * [Diagramming](#diagramming)
   * [Distributed Filesystems](#distributed-filesystems)
   * [DNS](#dns)
-  * [Editors](#editors)
+  * [Редактори](#редактори)
   * [IT Asset Management](#it-asset-management)
   * [LDAP](#ldap)
   * [Log Management](#log-management)
-  * [Mail Servers](#mail-servers)
-  * [Messaging](#messaging)
-  * [Monitoring](#monitoring)
+  * [Поштові сервери](#поштові-сервери)
+  * [Листування](#листування)
+  * [Моніторинг](#моніторинг)
   * [Metric & Metric Collection](#metric--metric-collection)
-  * [Network Configuration Management](#network-configuration-management)
-  * [Newsletter](#newsletters)
+  * [Керування конфіґурацією мережі](#керування-конфґурацією-мережі)
+  * [Новинні листи](#новинні-листи)
   * [NoSQL](#nosql)
-  * [Packaging](#packaging)
+  * [Пакування](#пакування)
   * [Queuing](#queuing)
   * [RDBMS](#rdbms)
-  * [Security](#security)
+  * [Безпека](#безпека)
   * [Service Discovery](#service-discovery)
-  * [Software Containers](#software-containers)
+  * [Контейнери](#Контейнери)
   * [SSH](#ssh)
-  * [Statistics](#statistics)
-  * [Status Pages](#status-pages)
+  * [Статистика](#Статистика)
+  * [Сторінки стану](#сторінки-стану)
   * [Ticketing systems](#ticketing-systems)
-  * [Troubleshooting](#troubleshooting)
-  * [Project Management](#project-management)
-  * [Version control](#version-control)
-  * [Virtualization](#virtualization)
+  * [Вирішення проблем](#Вирішення проблем)
+  * [Керування проєктами](#керування-проєктами)
+  * [Контроль версій](#контроль-версій)
+  * [Віртуалізація](#віртуалізація)
   * [VPN](#vpn)
-  * [Web](#web)
-  * [Webmails](#webmails)
-  * [Wikis](#wikis)
-* [Resources](#resources)
-  * [Blogs](#blogs)
-  * [Books](#books)
-  * [Newsletters](#newsletters)
-  * [Repositories](#repositories)
-  * [Websites](#websites)
+  * [Веб](#веб)
+  * [Вебпошта](#вебпошта)
+  * [Вікі](#вікі)
+* [Ресурси](#ресурси)
+  * [Блоґи](#блоґи)
+  * [Книжки](#книжки)
+  * [Новинні листи](#новинні-листи)
+  * [Репозиторії](#репозиторії)
+  * [вебсайти](#вебсайти)
 
 
-## Backups
+## Резервне копіювання
 
-*Backup software.*
+*ПЗ для резервного копіювання.*
 
 * [Amanda](http://www.amanda.org/) - Client-server model backup tool.
 * [Attic](https://attic-backup.org) - A deduplicating backup program written in Python.
@@ -89,9 +89,9 @@ Please read [CONTRIBUTING](./CONTRIBUTING.md) if you wish to add software.
 * [Backup](https://github.com/meskyanichi/backup) - Provides an elegant DSL in Ruby for performing backups on UNIX-like systems.
 * [DREBS](https://github.com/dojo4/drebs) - AWS EBS backup script that supports strategies.
 
-## Build Automation
+## Автоматизація збірки
 
-*Build automation tools.*
+*Засоби для автоматизації збірки.*
 
 * [Apache Ant](https://ant.apache.org/) - Automation build tool, similar to make, written in Java.
 * [Apache Maven](http://maven.apache.org/) - Build automation tool mainly for Java.
@@ -110,12 +110,12 @@ Please read [CONTRIBUTING](./CONTRIBUTING.md) if you wish to add software.
 * [Lita](https://www.lita.io/) - A robot companion for your company's chat room.
 * [KeyBase](https://www.keybase.io/) - Encrypted chat, cloud and git.
 
-## Cloning
+## Клонування
 
-*Cloning software.*
+*ПЗ для клонування.*
 
-* [Clonezilla](http://clonezilla.org/) - Partition and disk imaging/cloning program.
-* [Fog](http://www.fogproject.org/) - Another computer cloning solution.
+* [Clonezilla](http://clonezilla.org/) - програма для створення образів/клонування дисків і розділів.
+* [Fog](http://www.fogproject.org/) - інше рішення компʼютерного клонування.
 * [Redo Backup](http://redobackup.org/) - Easy Backup, Recovery and Restore.
 
 ## Cloud Computing
@@ -150,7 +150,7 @@ Please read [CONTRIBUTING](./CONTRIBUTING.md) if you wish to add software.
 * [StackStorm](http://stackstorm.com/) - Event Driven Operations and ChatOps platform for infrastructure management. Written in Python.
 * [zookeeper](http://zookeeper.apache.org/) - ZooKeeper is a centralized service for maintaining configuration information, naming, providing distributed synchronization, and providing group services.
 
-## Cloud Storage
+## Хмарні сховища
 
 * [git-annex assistant](http://git-annex.branchable.com/assistant/) - A synchronised folder on each of your OSX and Linux computers, Android devices, removable drives, NAS appliances, and cloud services.
 * [nextCloud](https://nextcloud.com) - Provides access to your files via the web
@@ -168,7 +168,7 @@ Please read [CONTRIBUTING](./CONTRIBUTING.md) if you wish to add software.
 * [Phabricator](http://phabricator.org/) - Code review tool build by facebook and used by WikiMedia, FB, dropbox etc. Comes with an integrated wiki, bug tracker, VC integration and a CLI tool called arcanist.
 * [Review Board](https://www.reviewboard.org/) - Web-based collaborative code review tool.
 
-## Collaborative Software
+## Кооперативне ПЗ
 
 *Collaborative software or groupware suites.*
 
@@ -217,9 +217,9 @@ Please read [CONTRIBUTING](./CONTRIBUTING.md) if you wish to add software.
 * [Spinnaker](http://www.spinnaker.io/) - Open source, multi-cloud continuous delivery platform for releasing software changes.
 * [TeamCity](https://www.jetbrains.com/teamcity/) - Powerful Continuous Integration out of the box
 
-## Control Panels
+## Панелі керування
 
-*Web hosting and server control panels.*
+*Панелі для контролю серверів і вебхостингів.*
 
 * [Ajenti](http://ajenti.org/) - Control panel for Linux and BSD.
 * [Cockpit](http://cockpit-project.org/) - New multi-server web interface for Linux servers written in C.
@@ -244,7 +244,7 @@ Please read [CONTRIBUTING](./CONTRIBUTING.md) if you wish to add software.
 
 ## Diagramming
 
-*Tools to diagram networks.*
+*Засоби для створення діаграм мереж.*
 
 * [drawthe.net](http://go.drawthe.net/) - Draws network diagrams dynamically from a text file describing the placement, layout and icons.
 
@@ -266,7 +266,7 @@ Please read [CONTRIBUTING](./CONTRIBUTING.md) if you wish to add software.
 
 ## DNS
 
-*DNS servers.*
+*Сервери DNS.*
 
 * [Bind](https://www.isc.org/downloads/bind/) - The most widely used name server software.
 * [djbdns](http://cr.yp.to/djbdns.html) - A collection of DNS applications, including tinydns.
@@ -278,26 +278,26 @@ Please read [CONTRIBUTING](./CONTRIBUTING.md) if you wish to add software.
 * [Unbound](http://unbound.net/) - Validating, recursive, and caching DNS resolver.
 * [Yadifa](http://yadifa.eu/) - Lightweight authoritative Name Server with DNSSEC capabilities powering the .eu top-level domain.
 
-## Editors
+## Редактори
 
-*Open source code editors.*
+*Відкриті редактори коду.*
 
 * [Atom](https://atom.io/) - A hackable text editor from GitHub.
 * [Brackets](http://brackets.io/) - Open source code editor for web designers and front-end developers.
 * [Eclipse](http://eclipse.org/) - IDE written in Java with an extensible plug-in system.
-* [Geany](http://www.geany.org/) - GTK2 text editor.
+* [Geany](http://www.geany.org/) - текстовий редактор на базі GTK2.
 * [GNU Emacs](http://www.gnu.org/software/emacs/) - An extensible, customizable text editor-and more.
 * [Haroopad](http://pad.haroopress.com/) - Markdown editor with live preview.
 * [ICEcoder](http://icecoder.net) - Code editor awesomeness, built with common web languages.
 * [IntellijIDEA](https://github.com/JetBrains/intellij-community) - Capable and ergonomic IDE, written in Java, It has a lot of plug-ins.
 * [jotgit](https://github.com/jdleesmiller/jotgit) - Git-backed real-time collaborative code editing.
-* [Light Table](http://www.lighttable.com/) - The next generation code editor.
+* [Light Table](http://www.lighttable.com/) - редактор коду наступного покоління.
 * [Lime](http://limetext.org/) - Aims to provide an open source solution to Sublime Text
-* [SciTE](http://www.scintilla.org/SciTE.html) - A SCIntilla based Text Editor.
-* [TextMate](https://github.com/textmate/textmate/) - A graphical text editor for OS X.
+* [SciTE](http://www.scintilla.org/SciTE.html) - текстовий редактор на основі SCIntilla.
+* [TextMate](https://github.com/textmate/textmate/) - текстовий редактор з графічним інтерфейсом для OS X.
 * [Vim](http://www.vim.org) - A highly configurable text editor built to enable efficient editing.
 * [Nano](http://https://www.nano-editor.org/) - A popular text editor, by default comes with most Linux distributions.
-* [Visual Studio Code](https://code.visualstudio.com/) - Fast, hackable, multi-platform code editor from Microsoft.
+* [Visual Studio Code](https://code.visualstudio.com/) - швидкий, налаштовуваний, багатоплатформовий редактор коду від Microsoft.
 
 ## IT Asset Management
 
@@ -313,7 +313,7 @@ Please read [CONTRIBUTING](./CONTRIBUTING.md) if you wish to add software.
 
 ## LDAP
 
-*LDAP servers.*
+*Сервери LDAP.*
 
 * [389 Directory Server](http://port389.org) - Developed by Red Hat.
 * [Apache Directory Server](http://directory.apache.org/) - Apache Software Foundation project written in Java.
@@ -340,16 +340,16 @@ Please read [CONTRIBUTING](./CONTRIBUTING.md) if you wish to add software.
 * [Logstash](http://logstash.net/) - Tool for managing events and logs.
 * [Octopussy](http://www.octopussy.pm) - Log Management Solution (Visualize / Alert / Report).
 
-## Mail Servers
+## Поштові сервери
 
-*Mail Delivery Agents (IMAP/POP3 software).*
+*Mail Delivery Agents (ПЗ для IMAP/POP3).*
 
 * [Courier IMAP/POP3](http://www.courier-mta.org/imap/) - Fast, scalable, enterprise IMAP and POP3 server.
 * [Cyrus IMAP/POP3](http://cyrusimap.org/) - Intended to be run on sealed servers, where normal users are not permitted to log in.
 * [Dovecot](http://www.dovecot.org/) - IMAP and POP3 server written primarily with security in mind.
 * [Qpopper](http://www.eudora.com/products/unsupported/qpopper/) - One of the oldest and most popular server implementations of POP3.
 
-*Mail Transfer Agents (SMTP servers).*
+*Mail Transfer Agents (сервери SMTP).*
 
 * [Exim](http://www.exim.org/) - Message transfer agent (MTA) developed at the University of Cambridge.
 * [Haraka](http://haraka.github.io/) - A high-performance, pluginable SMTP server written in JavaScript.
@@ -360,14 +360,14 @@ Please read [CONTRIBUTING](./CONTRIBUTING.md) if you wish to add software.
 * [Qmail](http://cr.yp.to/qmail.html) - Secure Sendmail replacement.
 * [Sendmail](http://www.sendmail.com/sm/open_source/) - Message transfer agent (MTA).
 
-*Complete solutions.*
+*Комплектні рішення.*
 
 * [Mail-in-a-Box](https://mailinabox.email/) - Take back control of your email with this easy-to-deploy mail server in a box.
 * [iRedMail](http://www.iredmail.org/) - Full-featured mail server solution based on Postfix and Dovecot.
 
-## Messaging
+## Листування
 
-*XMPP servers.*
+*Сервери XMPP.*
 
 * [ejabberd](http://www.ejabberd.im/) - XMPP instant messaging server written in Erlang/OTP.
 * [Metronome IM](http://www.lightwitch.org/metronome) - Fork of Prosody IM.
@@ -376,18 +376,18 @@ Please read [CONTRIBUTING](./CONTRIBUTING.md) if you wish to add software.
 * [Prosody IM](http://prosody.im/) - XMPP server written in Lua.
 * [Tigase](https://projects.tigase.org/projects/tigase-server) - XMPP server implementation in Java.
 
-*XMPP web clients.*
+*Вебклієнти XMPP.*
 
 * [Candy](http://candy-chat.github.io/candy/) - Multi user XMPP client written in Javascript.
 * [Kaiwa](http://getkaiwa.com/) - Web based chat client in the style of common paid alternatives.
 
-*Webchats.*
+*Вебчати.*
 
 * [Lets-Chat](http://sdelements.github.io/lets-chat/) - A self hosted chat suite written in Node.
 
-## Monitoring
+## Моніторинг
 
-*Monitoring software.*
+*ПЗ для моніторингу.*
 
 * [Alerta](https://github.com/guardian/alerta) - Distributed, scaleable and flexible monitoring system.
 * [Canopsis](http://www.canopsis.org) - Opensource Hypervision and Data Aggregation Software
@@ -449,9 +449,9 @@ Please read [CONTRIBUTING](./CONTRIBUTING.md) if you wish to add software.
 * [RRDtool](http://oss.oetiker.ch/rrdtool/) - Open source industry standard, high performance data logging and graphing system for time series data.
 * [Statsd](https://github.com/etsy/statsd/) - Application statistic listener.
 
-## Network Configuration Management
+## Керування конфіґурацією мережі
 
-*Network configuration management tools.*
+*Засоби для керування конфіґурацією мережі.*
 
 * [GestióIP](http://www.gestioip.net/) - An automated web based IPv4/IPv6 IP Address Management tool.
 * [NOC Project](http://nocproject.org/) - Scalable, high-performance and open-source [OSS](http://en.wikipedia.org/wiki/Operations_support_system) system for ISP, service and content providers.
@@ -463,12 +463,12 @@ Please read [CONTRIBUTING](./CONTRIBUTING.md) if you wish to add software.
 * [trigger](https://github.com/trigger/trigger) - Robust network automation toolkit written in Python.
 
 
-## Newsletters
+## Новинні листи
 
-*Newsletter software.*
+*ПЗ для керування новинними листами.*
 
-* [DadaMail](http://dadamailproject.com/) - Mailing List Manager, written in Perl.
-* [phpList](http://www.phplist.com/) - Newsletter manager written in PHP.
+* [DadaMail](http://dadamailproject.com/) - керівник поштової розсилки, написаний на Perl.
+* [phpList](http://www.phplist.com/) - керівник новинних листів написаний на PHP.
 
 ## NoSQL
 
@@ -491,14 +491,14 @@ Please read [CONTRIBUTING](./CONTRIBUTING.md) if you wish to add software.
   * [FlockDB](https://github.com/twitter/flockdb) - Twitter's distributed, fault-tolerant graph database.
   * [Neo4j](http://www.neo4j.org/) - Open source graph database.
 
-*Key-Value.*
+*Ключ-Значення.*
 
   * [Couchbase](http://www.couchbase.com/) - In-memory, replicated, peristent key/value datastore.
   * [LevelDB](https://github.com/google/leveldb) - Google's high performance key/value database.
   * [Redis](http://redis.io/) - Networked, in-memory, key-value data store with optional durability.
   * [Riak](http://basho.com/riak/) - Another fault-tolerant key-value NoSQL database.
 
-## Packaging
+## Пакування
 
 * [fpm](https://github.com/jordansissel/fpm) - Versatile multi format package creator.
 * [omnibus-ruby](https://github.com/opscode/omnibus-ruby) - Full stack, cross distro packaging software (Ruby).
@@ -521,7 +521,8 @@ Please read [CONTRIBUTING](./CONTRIBUTING.md) if you wish to add software.
 * [ZeroMQ](http://zeromq.org/) -  High-performance asynchronous messaging library.
 
 ## RDBMS
-*Relational DBMS.*
+
+*Реляційні DBMS.*
 
 * [Firebird](http://www.firebirdsql.org/) - True universal open source database.
 * [Galera](http://galeracluster.com/) - Galera Cluster for MySQL is an easy-to-use high-availability solution with high system up-time, no data loss, and scalability for future growth.
@@ -532,9 +533,9 @@ Please read [CONTRIBUTING](./CONTRIBUTING.md) if you wish to add software.
 * [PostgreSQL-XL](http://www.postgres-xl.org/) - Scalable Open Source PostgreSQL-based database cluster.
 * [SQLite](http://sqlite.org/) - Library that implements a self-contained, serverless, zero-configuration, transactional SQL DBS.
 
-## Security
+## Безпека
 
-*Security tools.*
+*Засоби безпеки.*
 
 * [Blackbox](https://github.com/StackExchange/blackbox) - Safely store secrets in Git/Mercurial. Provides tooling to automatically encrypt secrets like passwords.
 * [Denyhosts](http://denyhosts.sourceforge.net/) - Thwart SSH dictionary based attacks and brute force attacks.
@@ -555,9 +556,9 @@ Please read [CONTRIBUTING](./CONTRIBUTING.md) if you wish to add software.
 * [Doozerd](https://github.com/ha/doozerd) - Doozer is a highly-available, completely consistent store for small amounts of extremely important data.
 * [ZooKeeper](http://zookeeper.apache.org/) - ZooKeeper is a centralized service for maintaining configuration information, naming, providing distributed synchronization, and providing group services.
 
-## Software Containers
+## Контейнери
 
-*Operating system–level virtualization.*
+*Віртуалізація на рівні операційної системи.*
 
 * [Bitnami](https://bitnami.com/) - Produces open source installers or software packages for web applications and development stacks as well as virtual appliances.
 * [Docker](http://www.docker.com/) - Open platform for developers and sysadmins to build, ship, and run distributed applications.
@@ -569,7 +570,7 @@ Please read [CONTRIBUTING](./CONTRIBUTING.md) if you wish to add software.
 
 ## SSH
 
-*SSH tools.*
+*Засоби SSH.*
 
 * [Advanced SSH config](https://pypi.python.org/pypi/advanced-ssh-config/) - Enhances ssh_config file capabilities, completely transparent.
 * [autossh](http://www.harding.motd.ca/autossh/) - Automatically respawn ssh session after network interruption.
@@ -582,9 +583,9 @@ Please read [CONTRIBUTING](./CONTRIBUTING.md) if you wish to add software.
 * [sshrc](https://github.com/Russell91/sshrc) - sources ~/.sshrc on your local computer after logging in remotely.
 * [stormssh](http://stormssh.readthedocs.org) - A command line tool to manage SSH connections.
 
-## Statistics
+## Статистика
 
-*Analytics software.*
+*ПЗ для аналітики.*
 
 * [Analog](http://www.web42.com/analog/) - Logfile Analyser.
 * [AWStats](http://www.awstats.org/) - Generates web, streaming, ftp or mail server statistics graphically.
@@ -593,7 +594,7 @@ Please read [CONTRIBUTING](./CONTRIBUTING.md) if you wish to add software.
 * [Piwik](http://piwik.org/) - Web analytics application.
 * [Webalizer](http://www.webalizer.org/) - Fast, free web server log file analysis program.
 
-## Status Pages
+## Сторінки стану
 
 * [Cachet](https://cachethq.io) - An open source status page system written in PHP.
 
@@ -611,19 +612,19 @@ Please read [CONTRIBUTING](./CONTRIBUTING.md) if you wish to add software.
 * [Request Tracker](http://www.bestpractical.com/rt/) - Ticket-tracking system written in Perl.
 * [TheBugGenie](http://www.thebuggenie.com) - Ticket system with extensive user rights system.
 
-## Troubleshooting
+## Вирішення проблем
 
-*Troubleshooting tools.*
+*Засоби відстеження проблем.*
 
 * [mitmproxy](http://mitmproxy.org/) - A Python tool used for intercepting, viewing and modifying network traffic. Invaluable in troubleshooting certain problems.
 * [Sysdig](http://www.sysdig.org/) - Capture system state and activity from a running Linux instance, then save, filter and analyze.
 * [Wireshark](http://www.wireshark.org/) - The world's foremost network protocol analyzer.
 
-*Troubleshooting distributions.*
+*Дистрибутиви для вирішення проблем.*
 
 * [Trinity Rescue Kit](http://trinityhome.org) - Linux Live CD for general computer troubleshooting.
 
-## Project Management
+## Керування проєктами
 
 *Web-based project management and bug tracking systems.*
 
@@ -638,7 +639,7 @@ Please read [CONTRIBUTING](./CONTRIBUTING.md) if you wish to add software.
 * [The Bug Genie](http://www.thebuggenie.com/) - Written in PHP.
 * [Trac](http://trac.edgewall.org/) - Written in python.
 
-## Version control
+## Контроль версій
 
 *Software versioning and revision control.*
 
@@ -648,9 +649,9 @@ Please read [CONTRIBUTING](./CONTRIBUTING.md) if you wish to add software.
 * [Mercurial](http://mercurial.selenic.com/) - Another distributed revision control.
 * [Subversion](http://subversion.apache.org/) - Client-server revision control system.
 
-## Virtualization
+## Віртуалізація
 
-*Virtualization software.*
+*ПЗ для віртуалізації.*
 
 * [Archipel](http://archipelproject.org/) - XMPP based virtualization management platform.
 * [Ganeti](https://code.google.com/p/ganeti/) - Cluster virtual server management software tool built on top of KVM and Xen.
@@ -666,7 +667,7 @@ Please read [CONTRIBUTING](./CONTRIBUTING.md) if you wish to add software.
 
 ## VPN
 
-*VPN software.*
+*ПЗ для VPN.*
 
 * [OpenVPN](https://community.openvpn.net) - Uses a custom security protocol that utilizes SSL/TLS for key exchange.
 * [Pritunl](http://pritunl.com/) - OpenVPN based solution. Easy to set up.
@@ -676,11 +677,11 @@ Please read [CONTRIBUTING](./CONTRIBUTING.md) if you wish to add software.
 * [tinc](http://www.tinc-vpn.org/) - Distributed p2p VPN.
 * [wireguard](https://www.wireguard.com/) - New minimal VPN Solution that is very fast.
 
-## Web
+## Веб
 
-*Web servers.*
+*Вебсервери.*
 
-* [Apache](http://httpd.apache.org/) - Most popular web server.
+* [Apache](http://httpd.apache.org/) - найпопулярніший вебсервер.
 * [Caddy](https://caddyserver.com/) - The HTTP/2 Web Server with Fully Managed TLS.
 * [Cherokee](http://cherokee-project.com/) - Lightweight, high-performance web server/reverse proxy.
 * [Lighttpd](http://www.lighttpd.net/) - Web server more optimized for speed-critical environments.
@@ -694,17 +695,17 @@ Please read [CONTRIBUTING](./CONTRIBUTING.md) if you wish to add software.
 * [Traefik](https://traefik.io/) - Træfɪk is a modern HTTP reverse proxy and load balancer made to deploy microservices with ease.
 * [Varnish](https://www.varnish-cache.org/) - HTTP based web application accelerator focusing on optimizing caching and compression.
 
-## Webmails
+## Вебпошта
 
-*Webmail applications.*
+*Застосунки для вебпошти.*
 
 * [Mailpile](https://www.mailpile.is/) - A modern, fast web-mail client with user-friendly encryption and privacy features.
 * [Roundcube](http://roundcube.net/) - Browser-based IMAP client with an application-like user interface.
 * [SquirrelMail](http://squirrelmail.org) - Another browser-based IMAP client.
 
-## Wikis
+## Вікі
 
-*Wiki software.*
+*ПЗ для вікі.*
 
 * [BookStack](https://www.bookstackapp.com/) - A simple, user-friendly wiki built with PHP that uses MySQL for storage.
 * [DokuWiki](https://www.dokuwiki.org/dokuwiki) - Simple to use and highly versatile wiki that doesn't require a database.
@@ -716,19 +717,19 @@ Please read [CONTRIBUTING](./CONTRIBUTING.md) if you wish to add software.
 * [Ōlelo Wiki](https://github.com/minad/olelo) - A a wiki that stores pages in a Git repository.
 * [TiddlyWiki](http://tiddlywiki.com) - Complete interactive wiki in JavaScript.
 
-# Resources
+# Ресурси
 
-Various resources, such as books, websites and articles, for improving your skills and knowledge.
+Різні джерела, такі як книжки, вебсайти чи статті для покращення ваших навичок і знань.
 
-## Blogs
+## Блоґи
 
 * [Code as Craft](http://codeascraft.com/) - Etsy's Ops blog, lots of technical posts.
 * [DevOpsGuys](http://blog.devopsguys.com/) - Devops consultants who blog about operations.
 * [Rackspace Developers](http://developer.rackspace.com/blog/) - Slightly biased blog with lots of Devops Topics.
 
-## Books
+## Книжки
 
-*Sysadmin related books.*
+*Повʼязані з системним адмініструванням книжки.*
 
 * [Learn Cisco Network Administration in a Month of Lunches] (https://www.manning.com/books/learn-cisco-network-administration-in-a-month-of-lunches) - A tutorial designed for sysadmins who need to learn how to administer Cisco switches and routers.
 * [The Linux Command Line](http://linuxcommand.org/tlcl.php) - A book about the Linux command line by William Shotts.
@@ -738,33 +739,33 @@ Various resources, such as books, websites and articles, for improving your skil
 * [UNIX and Linux System Administration Handbook](http://www.admin.com/) - Approaches system administration from a practical perspective.
 * [Securing DevOps](https://manning.com/books/securing-devops?a_aid=securingdevops&a_bid=1353bcd8) - A book on Security techniques for DevOps that reviews state of the art practices used in securing web applications and their infrastructure.
 
-## Newsletters
+## Новинні листи
 
 * [Servers for Hackers](http://serversforhackers.com/) - Newsletter for programmers who find themselves needing to know their way around a server.
 * [DevOpsLinks](http://devopslinks.com) - A community of DevOps, SysAdmin & Developers with a weekly newsletter and a team chat.
 
-## Repositories
+## Репозиторії
 
-*Debian-based distributions.*
+*Для дистрибутивів на основі Debian.*
 
 * [Dotdeb](http://www.dotdeb.org/) - Repository with LAMP updated packages for Debian.
 
-*RPM-based distributions.*
+*Для дистрибутивів на основі RPM.*
 
 * [ElRepo](http://elrepo.org/tiki/tiki-index.php) - Community Repo for Enterprise Linux (RHEL, CentOS, etc).
 * [EPEL](https://fedoraproject.org/wiki/EPEL) - Repository for RHEL and compatibles (CentOS, Scientific Linux).
 * [Remi](http://rpms.famillecollet.com/) - Repository with LAMP updated packages for RHEL/Centos/Fedora.
 * [Software Collections](https://www.softwarecollections.org) - Community Release of [Red Hat Software Collections](https://access.redhat.com/documentation/en-US/Red_Hat_Software_Collections/). Provides updated packages of Ruby, Python, etc. for CentOS/Scientific Linux 6.x.
 
-## Websites
+## Вебсайти
 
-*Useful sysadmin related websites.*
+*Повʼязані з системним адмініструванням вебсайти.*
 
 * [Ops School](http://www.opsschool.org) - Comprehensive program that will help you learn to be an operations engineer.
 * [Digital Ocean Tutorials](https://www.digitalocean.com/community/tutorials) - A surprisingly vast resource for getting the basics of certain applications, tools, or even systems administration topics.
 
-## License
+## Ліцензія
 
 ![cc license](http://i.creativecommons.org/l/by-sa/4.0/88x31.png)
 
-This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International](http://creativecommons.org/licenses/by-sa/4.0/) license.
+Дана робота розповсюджується під ліцензією [Creative Commons Attribution-ShareAlike 4.0 International](http://creativecommons.org/licenses/by-sa/4.0/).
