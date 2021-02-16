@@ -1,6 +1,8 @@
 # Дивовижне системне адміністрування
 Список дивовижних відкритих (open source) ресурсів для системного адміністрування.
 
+Ориґінальний репозиторій англійською мовою: https://github.com/kahun/awesome-sysadmin
+
 ## Співпраця
 Перш ніж додавати ПЗ прочитайте [CONTRIBUTING](./CONTRIBUTING.md).
 
@@ -12,20 +14,20 @@
   * [Клонування](#клонування)
   * [Cloud Computing](#cloud-computing)
   * [Хмарні сховища](#хмарні-сховища)
-  * [Code Review](#code-review)
+  * [Розгляд коду](#розгляд-коду)
   * [Кооперативне ПЗ](#кооперативне-пз)
-  * [Configuration Management Database](#configuration-management-database)
-  * [Configuration Management](#configuration-management)
+  * [Бази даних керування конфіґурацією](#бази-даних-керування-конфіґурацією)
+  * [Керування налаштуваннями](#керування-налаштуваннями)
   * [Continuous Integration & Continuous Deployment](#continuous-integration--continuous-deployment)
   * [Панелі керування](#панелі-керування)
   * [Deployment Automation](#deployment-automation)
-  * [Diagramming](#diagramming)
+  * [Створення діаграм](#створення-діаграм)
   * [Distributed Filesystems](#distributed-filesystems)
   * [DNS](#dns)
   * [Редактори](#редактори)
   * [IT Asset Management](#it-asset-management)
   * [LDAP](#ldap)
-  * [Log Management](#log-management)
+  * [Керування лоґами](#керування-лоґами)
   * [Поштові сервери](#поштові-сервери)
   * [Листування](#листування)
   * [Моніторинг](#моніторинг)
@@ -43,7 +45,7 @@
   * [Статистика](#Статистика)
   * [Сторінки стану](#сторінки-стану)
   * [Ticketing systems](#ticketing-systems)
-  * [Вирішення проблем](#Вирішення проблем)
+  * [Вирішення проблем](#вирішення-проблем)
   * [Керування проєктами](#керування-проєктами)
   * [Контроль версій](#контроль-версій)
   * [Віртуалізація](#віртуалізація)
@@ -56,35 +58,35 @@
   * [Книжки](#книжки)
   * [Новинні листи](#новинні-листи)
   * [Репозиторії](#репозиторії)
-  * [вебсайти](#вебсайти)
+  * [Вебсайти](#вебсайти)
 
 
 ## Резервне копіювання
 
 *ПЗ для резервного копіювання.*
 
-* [Amanda](http://www.amanda.org/) - Client-server model backup tool.
-* [Attic](https://attic-backup.org) - A deduplicating backup program written in Python.
-* [Bacula](http://www.bacula.org) - Another Client-server model backup tool.
-* [Bareos](http://www.bareos.org) - A fork of Bacula backup tool.
+* [Amanda](http://www.amanda.org/) - засіб для резервного копіювання з клієнт-серверною моделлю.
+* [Attic](https://attic-backup.org) - програма для резервного копіювання без дублювання даних, написана на Python.
+* [Bacula](http://www.bacula.org) - інший засіб для резервного копіювання з клієнт-серверною моделлю.
+* [Bareos](http://www.bareos.org) - засіб резервного копіювання, гілка від проєкту Bacula.
 * [Barman](http://www.pgbarman.org) - Backup and Recovery Manager for disaster recovery of PostgreSQL servers.
 * [Backupninja](https://labs.riseup.net/code/projects/backupninja) - Lightweight, extensible meta-backup system.
-* [Backuppc](http://backuppc.sourceforge.net/) - Client-server model backup tool with file pooling scheme.
-* [Brebis](http://brebisproject.org) - A fully automated backup checker.
+* [BackupPC](https://backuppc.github.io/backuppc/) - клієнт-серверний засіб резервного копіювання, який працює за схемою зливання файлів.
+* [Brebis](http://brebisproject.org) - повністю автоматизована перевірка резервних копій
 * [Bup](https://github.com/bup/bup) - Incremental backups with rolling checksums, git packfiles, de-duplication, and a FUSE filesystem.
-* [Burp](http://burp.grke.org/) - Network backup and restore program.
+* [Burp](http://burp.grke.org/) - програма для резервного копіювання і відновлення через мережу.
 * [Duplicati](http://www.duplicati.com) - Multiple backends, encryption, web-ui and multi-OS backup tool.
 * [Duplicity](http://duplicity.nongnu.org/) - Encrypted bandwidth-efficient backup using the rsync algorithm.
-* [FreeFileSync](http://www.freefilesync.org) - Folder comparison and synchronization tool.
+* [FreeFileSync](http://www.freefilesync.org) - засіб для порівняння і синхронізації тек.
 * [Lsyncd](https://github.com/axkibe/lsyncd) - File Monitor which spawns a process to synchronize the changes (rsync by default).
-* [restic](https://github.com/restic/restic) - Fast, secure, efficient backup program 
-* [Rsnapshot](http://www.rsnapshot.org/) - Filesystem Snapshotting Utility.
+* [restic](https://github.com/restic/restic) - швидка, безпечна, ефективна програма для резервного копіювання.
+* [Rsnapshot](http://www.rsnapshot.org/) - утиліта для часового зрізу файлової ситеми.
 * [SafeKeep](http://safekeep.sourceforge.net/) - Centralized pull-based backup using `rdiff-backup`.
 * [Snebu](http://www.snebu.com/) – Snapshot backup with global multi-client deduplication and transparent compression.
-* [UrBackup](http://www.urbackup.org/) - Another client-server backup system.
-* [ZBackup](http://zbackup.org/) - A versatile deduplicating backup tool.
+* [UrBackup](http://www.urbackup.org/) - інша клієнт-серверна система резервного копіювання.
+* [ZBackup](http://zbackup.org/) - універсальний засіб резервного копіювання без дублювання даних.
 
-*Backup libraries.*
+*Бібліотеки для резервного копіювання.*
 
 * [Backup](https://github.com/meskyanichi/backup) - Provides an elegant DSL in Ruby for performing backups on UNIX-like systems.
 * [DREBS](https://github.com/dojo4/drebs) - AWS EBS backup script that supports strategies.
@@ -93,22 +95,22 @@
 
 *Засоби для автоматизації збірки.*
 
-* [Apache Ant](https://ant.apache.org/) - Automation build tool, similar to make, written in Java.
-* [Apache Maven](http://maven.apache.org/) - Build automation tool mainly for Java.
-* [GNU Make](http://www.gnu.org/software/make/) - The most popular automation build tool for many purposes.
-* [Gradle](http://gradle.org/) - Another open source build automation system.
+* [Apache Ant](https://ant.apache.org/) - автоматизований засіб збірки, схожий на make, написаний на Java.
+* [Apache Maven](http://maven.apache.org/) - засіб автоматизованої збірки в основному для Java.
+* [GNU Make](http://www.gnu.org/software/make/) - найпопулярніший засіб автоматизованої збірки для різних цілей.
+* [Gradle](http://gradle.org/) - інша відкрита система автоматизованої збірки.
 
 ## ChatOps
 
 *Conversation-driven development & management.*
 
-* [CloudBot](https://github.com/CloudBotIRC/CloudBot) - The simple, fast, expandable, open-source Python IRC bot.
+* [CloudBot](https://github.com/CloudBotIRC/CloudBot) - простий, швидкий, розширюваний, відкритий IRC-бот на Python.
 * [Eggdrop](http://www.eggheads.org/) - The world's most popular Open Source IRC bot, designed for flexibility and ease of use.
 * [Err](http://errbot.net/) - A plugin based chatbot designed to be easily deployable, extensible and maintainable.
 * [Hubot](https://hubot.github.com/) - A customizable, life embetterment robot.
 * [Lazlo](https://github.com/djosephsen/lazlo) - A chatops automation framework in Go.
 * [Lita](https://www.lita.io/) - A robot companion for your company's chat room.
-* [KeyBase](https://www.keybase.io/) - Encrypted chat, cloud and git.
+* [KeyBase](https://www.keybase.io/) - шифрований чат, хмара і git.
 
 ## Клонування
 
@@ -116,7 +118,7 @@
 
 * [Clonezilla](http://clonezilla.org/) - програма для створення образів/клонування дисків і розділів.
 * [Fog](http://www.fogproject.org/) - інше рішення компʼютерного клонування.
-* [Redo Backup](http://redobackup.org/) - Easy Backup, Recovery and Restore.
+* [Redo Backup](http://redobackup.org/) - легке резервне копіювання і відновлення даних.
 
 ## Cloud Computing
 
@@ -153,20 +155,20 @@
 ## Хмарні сховища
 
 * [git-annex assistant](http://git-annex.branchable.com/assistant/) - A synchronised folder on each of your OSX and Linux computers, Android devices, removable drives, NAS appliances, and cloud services.
-* [nextCloud](https://nextcloud.com) - Provides access to your files via the web
-* [ownCloud](https://owncloud.org) - Provides universal access to your files via the web, your computer or your mobile devices.
-* [Seafile](http://seafile.com) - Another Open Source Cloud Storage solution.
+* [nextCloud](https://nextcloud.com) - надає доступ до ваших файлів через веб
+* [ownCloud](https://owncloud.org) - надає універсальний доступ до ваших файлів через веб, компʼютер або мобільні пристрої.
+* [Seafile](http://seafile.com) - інше рішення відкритого хмарного сховища.
 * [SparkleShare](http://sparkleshare.org/) - Provides cloud storage and file synchronization services. By default, it uses Git as a storage backend.
 * [Swift](http://docs.openstack.org/developer/swift/) - A highly available, distributed, eventually consistent object/blob store.
 * [Syncthing](http://syncthing.net/) - Open Source system for private, encrypted and authenticated distribution of data.
 
-## Code Review
+## Розгляд коду
 
-*Web Based collaborative code review system.*
+*Системи кооперативного розгляду коду на основі Web.*
 
-* [Gerrit](https://code.google.com/p/gerrit/) - Based on the Git version control, it facilitates software developers to review modifications to the source code and approve or reject those changes.
-* [Phabricator](http://phabricator.org/) - Code review tool build by facebook and used by WikiMedia, FB, dropbox etc. Comes with an integrated wiki, bug tracker, VC integration and a CLI tool called arcanist.
-* [Review Board](https://www.reviewboard.org/) - Web-based collaborative code review tool.
+* [Gerrit](https://code.google.com/p/gerrit/) - на основі системи контролю версій Git, дозволяє розробникам ПЗ розглядати вихідний код, підтверджувати або відхиляти зміни.
+* [Phabricator](http://phabricator.org/) - засіб огляду коду розроблений facebook, який використовують WikiMedia, FB, dropbox тощо. В комплект входять вбудована вікі, відстеження помилок, контроль версій та інтерфейс командного рядка, що називається arcanist.
+* [Review Board](https://www.reviewboard.org/) - засіб кооперативного огляду коду на осонові Web.
 
 ## Кооперативне ПЗ
 
@@ -179,30 +181,30 @@
 * [SOGo](https://www.sogo.nu/) - Collaborative software server with a focus on simplicity and scalability.
 * [Zimbra](https://www.zimbra.com/community/) - Collaborative software suite, that includes an email server and web client.
 
-## Configuration Management Database
+## Бази даних керування конфіґурацією
 
-*Configuration management database (CMDB) software.*
+*ПЗ для баз даних керування конфіґурацією (CMDB).*
 
 * [Clusto](https://github.com/clusto/clusto) - Helps you keep track of your inventory, where it is, how it's connected, and provides an abstracted interface for interacting with the elements of the infrastructure.
 * [Collins](http://tumblr.github.io/collins) - At Tumblr, it's the infrastructure source of truth and knowledge.
-* [i-doit](http://www.i-doit.org/) - Open Source IT Documentation and CMDB.
+* [i-doit](http://www.i-doit.org/) - відкрита IT-документація і CMDB.
 * [iTop](http://www.combodo.com/-Overview-.html) - Complete open source, ITIL, web based service management tool.
 * [Ralph](https://github.com/allegro/ralph) - Asset management, DCIM and CMDB system for large Data Centers as well as smaller LAN networks.
 * [Sicekit](https://github.com/sicekit/sicekit) - The systems & infrastructure encyclopaedia toolkit (based on MediaWiki).
 
-## Configuration Management
+## Керування налаштуваннями
 
-*Configuration management tools.*
+*Засоби керування конфіґурацією.*
 
-* [Ansible](http://www.ansible.com/) -  It's written in Python and manages the nodes over SSH.
-* [CFEngine](http://cfengine.com/) - Lightweight agent system. Configuration state is specified via a declarative language.
+* [Ansible](http://www.ansible.com/) - написаний на Python і керує вузлами через SSH.
+* [CFEngine](http://cfengine.com/) - легкий системний аґент. Стан конфіґурації визначається через декларативну мову.
 * [Chef](http://www.opscode.com/chef/) - It's written in Ruby and Erlang and uses a pure-Ruby DSL.
-* [mgmt](https://github.com/purpleidea/mgmt) - Next generation config management written in Go.
+* [mgmt](https://github.com/purpleidea/mgmt) - керування налаштуваннями наступного рівня, написано на Go.
 * [Pallet](http://palletops.com/) - Infrastructure definition, configuration and management via a Clojure DSL.
 * [Puppet](http://puppetlabs.com/) - It's written in Ruby and uses Puppet's declarative language or a Ruby DSL.
-* [(R)?ex](https://www.rexify.org/) - It's written in Perl and use plain Perl, over SSH without agent.
-* [Salt](http://www.saltstack.com/) - It's written in Python.
-* [Slaughter](http://steve.org.uk/Software/slaughter/) - It's written in Perl.
+* [(R)?ex](https://www.rexify.org/) - написаний на Perl і використовує чистий Perl, через SSH без аґента.
+* [Salt](http://www.saltstack.com/) - написаний на Python.
+* [Slaughter](http://steve.org.uk/Software/slaughter/) - написаний на Perl.
 
 ## Continuous Integration & Continuous Deployment
 
@@ -242,7 +244,7 @@
 * [Rocketeer](http://rocketeer.autopergamene.eu/) - PHP task runner and deployment tool.
 * [Vlad the Deployer](http://rubyhitsquad.com/Vlad_the_Deployer.html) - Deployment automation (rake based).
 
-## Diagramming
+## Створення діаграм
 
 *Засоби для створення діаграм мереж.*
 
@@ -282,21 +284,21 @@
 
 *Відкриті редактори коду.*
 
-* [Atom](https://atom.io/) - A hackable text editor from GitHub.
-* [Brackets](http://brackets.io/) - Open source code editor for web designers and front-end developers.
-* [Eclipse](http://eclipse.org/) - IDE written in Java with an extensible plug-in system.
+* [Atom](https://atom.io/) - налаштовуваний текстовий редактор від GitHub.
+* [Brackets](http://brackets.io/) - відкритий редактор коду для вебдизайнерів і front-end-розробників.
+* [Eclipse](http://eclipse.org/) - IDE написане на Java з розширюваною системою втулок.
 * [Geany](http://www.geany.org/) - текстовий редактор на базі GTK2.
-* [GNU Emacs](http://www.gnu.org/software/emacs/) - An extensible, customizable text editor-and more.
-* [Haroopad](http://pad.haroopress.com/) - Markdown editor with live preview.
-* [ICEcoder](http://icecoder.net) - Code editor awesomeness, built with common web languages.
-* [IntellijIDEA](https://github.com/JetBrains/intellij-community) - Capable and ergonomic IDE, written in Java, It has a lot of plug-ins.
+* [GNU Emacs](http://www.gnu.org/software/emacs/) - розширюваний, налаштовуваний текстовий редактор і більше.
+* [Haroopad](http://pad.haroopress.com/) - редактор Markdown з живим переглядом.
+* [ICEcoder](http://icecoder.net) - чудеса радактора коду, в комплект входять основні мови веб-розробки.
+* [IntellijIDEA](https://github.com/JetBrains/intellij-community) - вправне та ерґономічне IDE, написане на Java, має багато втулок.
 * [jotgit](https://github.com/jdleesmiller/jotgit) - Git-backed real-time collaborative code editing.
 * [Light Table](http://www.lighttable.com/) - редактор коду наступного покоління.
 * [Lime](http://limetext.org/) - Aims to provide an open source solution to Sublime Text
 * [SciTE](http://www.scintilla.org/SciTE.html) - текстовий редактор на основі SCIntilla.
 * [TextMate](https://github.com/textmate/textmate/) - текстовий редактор з графічним інтерфейсом для OS X.
 * [Vim](http://www.vim.org) - A highly configurable text editor built to enable efficient editing.
-* [Nano](http://https://www.nano-editor.org/) - A popular text editor, by default comes with most Linux distributions.
+* [Nano](http://https://www.nano-editor.org/) - популярний текстовий редактор, часто входить у найпоширеніші дистрибутиви Linux.
 * [Visual Studio Code](https://code.visualstudio.com/) - швидкий, налаштовуваний, багатоплатформовий редактор коду від Microsoft.
 
 ## IT Asset Management
@@ -315,20 +317,20 @@
 
 *Сервери LDAP.*
 
-* [389 Directory Server](http://port389.org) - Developed by Red Hat.
-* [Apache Directory Server](http://directory.apache.org/) - Apache Software Foundation project written in Java.
+* [389 Directory Server](http://port389.org) - розроблений Red Hat.
+* [Apache Directory Server](http://directory.apache.org/) - проєкт від Apache Software Foundation написаний на Java.
 * [Fusion Directory](http://www.fusiondirectory.org) - Improve the Management of the services and the company directory based on OpenLDAP.
-* [OpenDJ](http://opendj.forgerock.org/) - Fork of OpenDS.
-* [OpenDS](https://opends.java.net/) - Another directory server written in Java.
-* [OpenLDAP](http://openldap.org/) - Developed by the OpenLDAP Project.
+* [OpenDJ](http://opendj.forgerock.org/) - гілка від OpenDS.
+* [OpenDS](https://opends.java.net/) - інший сервер каталогів написаний на Java.
+* [OpenLDAP](http://openldap.org/) - розроблений проєктом OpenLDAP.
 
-*LDAP management*
+*Керування LDAP.*
 
-* [Apache Directory Studio](https://directory.apache.org/studio/) - The Eclipse-based LDAP browser and directory client
+* [Apache Directory Studio](https://directory.apache.org/studio/) - клієнт каталогів і оглядач LDAP на основі Eclipse
 
-## Log Management
+## Керування лоґами
 
-*Log management tools: collect, parse, visualize ...*
+*Засоби керування лоґами: збирання, розпізнавання, візуалізація ...*
 
 * [Echofish](http://www.echothrust.com/projects/echofish) - A web based real-time event log aggregation, analysis, monitoring and management system.
 * [Elasticsearch](http://www.elasticsearch.org/) - A Lucene Based Document store mainly used for log indexing, storage and analysis.
@@ -370,15 +372,15 @@
 *Сервери XMPP.*
 
 * [ejabberd](http://www.ejabberd.im/) - XMPP instant messaging server written in Erlang/OTP.
-* [Metronome IM](http://www.lightwitch.org/metronome) - Fork of Prosody IM.
+* [Metronome IM](http://www.lightwitch.org/metronome) - гілка від Prosody IM.
 * [MongooseIM](https://www.erlang-solutions.com/products/mongooseim.html) - Fullstack real-time mobile messaging platform (XMPP+REST) in Erlang
 * [Openfire](http://www.igniterealtime.org/projects/openfire/) - Real time collaboration (RTC) server.
-* [Prosody IM](http://prosody.im/) - XMPP server written in Lua.
-* [Tigase](https://projects.tigase.org/projects/tigase-server) - XMPP server implementation in Java.
+* [Prosody IM](http://prosody.im/) - сервер XMPP написаний на Lua.
+* [Tigase](https://projects.tigase.org/projects/tigase-server) - реалізація сервера XMPP на Java.
 
 *Вебклієнти XMPP.*
 
-* [Candy](http://candy-chat.github.io/candy/) - Multi user XMPP client written in Javascript.
+* [Candy](http://candy-chat.github.io/candy/) - багатокористувацький клієнт XMPP написаний на Javascript.
 * [Kaiwa](http://getkaiwa.com/) - Web based chat client in the style of common paid alternatives.
 
 *Вебчати.*
@@ -396,8 +398,8 @@
 * [Centreon](http://www.centreon.com) - IT infrastructure and application monitoring for service performance.
 * [check_mk](http://mathias-kettner.com/check_mk.html) - Collection of extensions for Nagios.
 * [Flapjack](http://flapjack.io/) - Monitoring notification routing & event processing system.
-* [Icinga](https://www.icinga.org/) - Fork of Nagios.
-* [LibreNMS](https://github.com/librenms/librenms/) - fork of Observium.
+* [Icinga](https://www.icinga.org/) - гілка від Nagios.
+* [LibreNMS](https://github.com/librenms/librenms/) - гілка від Observium.
 * [Monit](http://mmonit.com/monit/#home) - Small Open Source utility for managing and monitoring Unix systems.
 * [Munin](http://munin-monitoring.org/) - Networked resource monitoring tool.
 * [Naemon](http://www.naemon.org/) - Network monitoring tool based on the Nagios 4 core with performance enhancements and new features.
@@ -417,7 +419,7 @@
 
 *Monitoring dashboards.*
 
-* [Adagios](http://adagios.org/) - Web based Nagios configuration interface.
+* [Adagios](http://adagios.org/) - інтерфейс конфіґурування Nagios на базі Web.
 * [Dash](https://github.com/afaqurk/linux-dash) - A low-overhead monitoring web dashboard for a GNU/Linux machine.
 * [Thruk](http://www.thruk.org/) - Multibackend monitoring web interface with support for Naemon, Nagios, Icinga and Shinken.
 * [Uchiwa](https://uchiwa.io) - Simple dashboard for the Sensu monitoring framework.
@@ -527,7 +529,7 @@
 * [Firebird](http://www.firebirdsql.org/) - True universal open source database.
 * [Galera](http://galeracluster.com/) - Galera Cluster for MySQL is an easy-to-use high-availability solution with high system up-time, no data loss, and scalability for future growth.
 * [MariaDB](https://mariadb.org/) - Community-developed fork of the MySQL.
-* [MySQL](http://dev.mysql.com/) - Most popular RDBMS server.
+* [MySQL](http://dev.mysql.com/) - найпопулярніший сервер RDBMS.
 * [Percona Server](http://www.percona.com/software) - Enhanced, drop-in MySQL replacement.
 * [PostgreSQL](http://www.postgresql.org/) - Object-relational database management system (ORDBMS).
 * [PostgreSQL-XL](http://www.postgres-xl.org/) - Scalable Open Source PostgreSQL-based database cluster.
@@ -565,7 +567,7 @@
 * [LXC](https://linuxcontainers.org/lxc/) -  Userspace interface for the Linux kernel containment features.
 * [LXD](https://linuxcontainers.org/lxd/) - LXD is a container "hypervisor".
 * [OpenVZ](http://openvz.org) - Container-based virtualization for Linux.
-* [Docker Compose](https://docs.docker.com/compose/) - Fast, isolated development environments using Docker.
+* [Docker Compose](https://docs.docker.com/compose/) - швидке, ізольоване середовище розробки через Docker.
 * [Singularity](http://singularity.lbl.gov/) - Flexible containers without root.
 
 ## SSH
@@ -576,12 +578,12 @@
 * [autossh](http://www.harding.motd.ca/autossh/) - Automatically respawn ssh session after network interruption.
 * [Cluster SSH](http://sourceforge.net/projects/clusterssh/) - Controls a number of xterm windows via a single graphical console.
 * [DSH](http://www.netfort.gr.jp/~dancer/software/dsh.html.en) - Dancer's shell / distributed shell - Wrapper for executing multiple remote shell commands from one command line.
-* [Mosh](http://mosh.mit.edu/) - The mobile shell.
+* [Mosh](http://mosh.mit.edu/) - мобільна оболонка.
 * [parallel-ssh](http://code.google.com/p/parallel-ssh/) - Provides parallel versions of OpenSSH and related tools.
 * [pdsh](https://code.google.com/p/pdsh/) - Pdsh is a high-performance, parallel remote shell utility.
 * [SSH Power Tool](http://code.google.com/p/sshpt/) - Execute commands and upload files to many servers simultaneously without using pre-shared keys.
 * [sshrc](https://github.com/Russell91/sshrc) - sources ~/.sshrc on your local computer after logging in remotely.
-* [stormssh](http://stormssh.readthedocs.org) - A command line tool to manage SSH connections.
+* [stormssh](http://stormssh.readthedocs.org) - засіб командного рядка для керування зʼєднаннями SSH.
 
 ## Статистика
 
@@ -596,7 +598,7 @@
 
 ## Сторінки стану
 
-* [Cachet](https://cachethq.io) - An open source status page system written in PHP.
+* [Cachet](https://cachethq.io) - відкрита система сторінок стану написана на PHP.
 
 ## Ticketing systems
 
@@ -604,8 +606,8 @@
 
 * [Bugzilla](http://www.bugzilla.org/) - General-purpose bugtracker and testing tool originally developed and used by the Mozilla project.
 * [Cerb](http://www.cerberusweb.com/) - Group-based e-mail management project.
-* [Flyspray](http://flyspray.org) - Web-based bug tracking system written in PHP.
-* [MantisBT](http://www.mantisbt.org/) - Web-based bug tracking system.
+* [Flyspray](http://flyspray.org) - вебсистема відстеження помилок написана на PHP.
+* [MantisBT](http://www.mantisbt.org/) - система відстеження помилок на базі Web.
 * [osTicket](http://osticket.com/) - Simple support ticket system.
 * [OTRS](http://www.otrs.com/) - Trouble ticket system for assigning tickets to incoming queries and tracking further communications.
 * [Redmine](http://www.redmine.org/) - Open source project management/ticketing web application written in Ruby.
@@ -622,22 +624,22 @@
 
 *Дистрибутиви для вирішення проблем.*
 
-* [Trinity Rescue Kit](http://trinityhome.org) - Linux Live CD for general computer troubleshooting.
+* [Trinity Rescue Kit](http://trinityhome.org) - живий CD Linux для вирішення загальних проблем.
 
 ## Керування проєктами
 
-*Web-based project management and bug tracking systems.*
+*Системи на основі Web для керування проєктами і відстеження помилок.*
 
-* [ChiliProject](https://www.chiliproject.org) - Fork of Redmine.
-* [GitBucket](https://github.com/takezoe/gitbucket) Clone of GitHub written in Scala; single jar install.
-* [GitLab](https://www.gitlab.com/) - Clone of GitHub written in Ruby.
-* [Gogs](http://gogs.io/) - Self-hosted Git service written in Go.
+* [ChiliProject](https://www.chiliproject.org) - гілка від Redmine.
+* [GitBucket](https://github.com/takezoe/gitbucket) клон GitHub написаний на Scala; один інсталяційний jar-файл.
+* [GitLab](https://www.gitlab.com/) - клон GitHub написаний на Ruby.
+* [Gogs](http://gogs.io/) - домашній сервер Git написаний на Go.
 * [OpenProject](https://www.openproject.org) - Project collaboration with open source.
-* [Phabricator](http://phabricator.org/) Written in PHP.
-* [Redmine](http://www.redmine.org/) - Written in ruby on rails.
+* [Phabricator](http://phabricator.org/) написаний на PHP.
+* [Redmine](http://www.redmine.org/) - написаний на ruby on rails.
 * [Taiga](https://taiga.io/) - Agile, Free, Open Source Project Management Tool based on the Kanban and Scrum methods.
-* [The Bug Genie](http://www.thebuggenie.com/) - Written in PHP.
-* [Trac](http://trac.edgewall.org/) - Written in python.
+* [The Bug Genie](http://www.thebuggenie.com/) - написаний на PHP.
+* [Trac](http://trac.edgewall.org/) - написаний на python.
 
 ## Контроль версій
 
@@ -653,11 +655,11 @@
 
 *ПЗ для віртуалізації.*
 
-* [Archipel](http://archipelproject.org/) - XMPP based virtualization management platform.
+* [Archipel](http://archipelproject.org/) - платформа керування віртуалізацією на основі XMPP.
 * [Ganeti](https://code.google.com/p/ganeti/) - Cluster virtual server management software tool built on top of KVM and Xen.
-* [KVM](http://www.linux-kvm.org) - Linux kernel virtualization infrastructure.
+* [KVM](http://www.linux-kvm.org) - інфраструктура віртуалізації ядра Linux.
 * [OpenNebula](http://opennebula.org/) - Flexible enterprise cloud made simple.
-* [oVirt](http://www.ovirt.org/) - Manages virtual machines, storage and virtual networks.
+* [oVirt](http://www.ovirt.org/) - керування віртуальними машинами, сховищами та віртуальними мережами.
 * [Packer](http://www.packer.io/) - A tool for creating identical machine images for multiple platforms from a single source configuration.
 * [Proxmox VE](https://www.proxmox.com/proxmox-ve) - Complete open source virtualization management solution.
 * [QEMU](http://www.qemu.org/) - QEMU is a generic and open source machine emulator and virtualizer.
@@ -670,12 +672,12 @@
 *ПЗ для VPN.*
 
 * [OpenVPN](https://community.openvpn.net) - Uses a custom security protocol that utilizes SSL/TLS for key exchange.
-* [Pritunl](http://pritunl.com/) - OpenVPN based solution. Easy to set up.
-* [SoftEther](https://www.softether.org/) - Multi-protocol software VPN with advanced features
+* [Pritunl](http://pritunl.com/) - рішення на основі OpenVPN. легке в налаштуванні.
+* [SoftEther](https://www.softether.org/) - багатопротокольне ПЗ для VPN з розширеними можливостями
 * [sshuttle](https://github.com/apenwarr/sshuttle) - Poor man's VPN.
 * [strongSwan](http://www.strongswan.org/) - Complete IPsec implementation for Linux.
 * [tinc](http://www.tinc-vpn.org/) - Distributed p2p VPN.
-* [wireguard](https://www.wireguard.com/) - New minimal VPN Solution that is very fast.
+* [wireguard](https://www.wireguard.com/) - нове, дуже швидке, мінімалістичне рішення для VPN.
 
 ## Веб
 
@@ -707,10 +709,10 @@
 
 *ПЗ для вікі.*
 
-* [BookStack](https://www.bookstackapp.com/) - A simple, user-friendly wiki built with PHP that uses MySQL for storage.
+* [BookStack](https://www.bookstackapp.com/) - проста, з дружнім інтерфейсом збірка вікі на PHP, що використовує MySQL для зберігання даних.
 * [DokuWiki](https://www.dokuwiki.org/dokuwiki) - Simple to use and highly versatile wiki that doesn't require a database.
 * [Gollum](https://github.com/gollum/gollum) - A simple, Git-powered wiki with a sweet API and local frontend.
-* [ikiwiki](http://ikiwiki.info/) - A wiki compiler.
+* [ikiwiki](http://ikiwiki.info/) - компілятор вікі.
 * [MDwiki](http://dynalon.github.io/mdwiki/#!index.md) - Wiki completely built in HTML5/Javascript and runs 100% on the client.
 * [MediaWiki](http://www.mediawiki.org/wiki/MediaWiki) - Used to power Wikipedia.
 * [MoinMoin](http://moinmo.in/) - An advanced, easy to use and extensible WikiEngine with a large community of users.
