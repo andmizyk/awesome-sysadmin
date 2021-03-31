@@ -44,7 +44,7 @@
   * [SSH](#ssh)
   * [Статистика](#Статистика)
   * [Сторінки стану](#сторінки-стану)
-  * [Ticketing systems](#ticketing-systems)
+  * [Системи квитків](#системи-квитків)
   * [Вирішення проблем](#вирішення-проблем)
   * [Керування проєктами](#керування-проєктами)
   * [Контроль версій](#контроль-версій)
@@ -154,13 +154,13 @@
 
 ## Хмарні сховища
 
-* [git-annex assistant](http://git-annex.branchable.com/assistant/) - A synchronised folder on each of your OSX and Linux computers, Android devices, removable drives, NAS appliances, and cloud services.
-* [nextCloud](https://nextcloud.com) - надає доступ до ваших файлів через веб
-* [ownCloud](https://owncloud.org) - надає універсальний доступ до ваших файлів через веб, компʼютер або мобільні пристрої.
-* [Seafile](http://seafile.com) - інше рішення відкритого хмарного сховища.
-* [SparkleShare](http://sparkleshare.org/) - Provides cloud storage and file synchronization services. By default, it uses Git as a storage backend.
+* [git-annex assistant](http://git-annex.branchable.com/assistant/) - синхронізована тека на всіх ваших компʼютерах OSX та Linux, пристроях Android, портативних пристроях, застосуваннях NAS і хмарних сервісах.
+* [nextCloud](https://nextcloud.com) - надає доступ до ваших файлів через веб-інтерфейс.
+* [ownCloud](https://owncloud.org) - надає універсальний доступ до ваших файлів через веб-інтерфейс, компʼютер чи мобільний пристрій.
+* [Seafile](http://seafile.com) - ще одне рішення відкритого хмарного сховища.
+* [SparkleShare](http://sparkleshare.org/) - надає хмарне сховище і сервіси синхронізації файлів. За замовчуванням працює на Git.
 * [Swift](http://docs.openstack.org/developer/swift/) - A highly available, distributed, eventually consistent object/blob store.
-* [Syncthing](http://syncthing.net/) - Open Source system for private, encrypted and authenticated distribution of data.
+* [Syncthing](http://syncthing.net/) - система з відкритим кодом для приватного, шифрованого і автентифікованого розповсюдження даних.
 
 ## Розгляд коду
 
@@ -600,9 +600,9 @@
 
 * [Cachet](https://cachethq.io) - відкрита система сторінок стану написана на PHP.
 
-## Ticketing systems
+## Системи квитків
 
-*Web-based ticketing system.*
+*Системи квитків на основі Web.*
 
 * [Bugzilla](http://www.bugzilla.org/) - General-purpose bugtracker and testing tool originally developed and used by the Mozilla project.
 * [Cerb](http://www.cerberusweb.com/) - Group-based e-mail management project.
